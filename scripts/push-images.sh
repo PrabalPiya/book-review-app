@@ -2,7 +2,7 @@
 
 set -e
 
-AWS_ACCOUNT_ID="$AWS_ID"
+AWS_ACCOUNT_ID="your-aws-account-id"
 AWS_REGION="ap-south-1"
 IMAGE_TAG="latest"
 

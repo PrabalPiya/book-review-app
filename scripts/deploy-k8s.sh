@@ -2,17 +2,17 @@
 
 set -e
 
-AWS_ACCOUNT_ID="$AWS_ID"
+AWS_ACCOUNT_ID="your-aws-account-id"
 AWS_REGION="ap-south-1"
 IMAGE_TAG="latest"
 
 FRONTEND_REPO="book-review-dev-frontend"
 BACKEND_REPO="book-review-dev-backend"
 
-DB_HOST="$AURORA_ENDPOINT"
+DB_HOST="your-aurora-endpoint"
 DB_NAME="bookreviewdb"
 DB_USER="admin"
-DB_PASS="$DB_PASS"
+DB_PASS="your-database-password"
 
 ECR_URL="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com"
 

@@ -327,51 +327,11 @@ curl http://backend-service:5000/api/books
 
 ## Cleanup
 
-Delete the Kubernetes application:
+Delete the Kubernetes and AWS infrastructure application:
 
 ```bash
-kubectl delete namespace book-review
+bash scripts/cleanup.sh
 ```
-
-Destroy AWS infrastructure:
-
-```bash
-cd terraform/environments/dev
-terraform destroy
-```
-
-Type:
-
-```text
-yes
-```
-
-If ECR repositories cannot be deleted because they contain images, add this inside the ECR Terraform resources:
-
-```hcl
-force_delete = true
-```
-
-Then run:
-
-```bash
-terraform destroy
-```
-
----
-
-## Cost Warning
-
-This project can cost money because it creates:
-
-* EKS cluster
-* EC2 worker nodes
-* NAT Gateway
-* Aurora database
-* Load Balancer
-* ECR repositories
-
-Always destroy resources after practice to avoid unnecessary AWS charges.
 
 ---
 
