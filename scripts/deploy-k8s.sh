@@ -2,17 +2,17 @@
 
 set -e
 
-AWS_ACCOUNT_ID="443845329055"
+AWS_ACCOUNT_ID="$AWS_ID"
 AWS_REGION="ap-south-1"
 IMAGE_TAG="latest"
 
 FRONTEND_REPO="book-review-dev-frontend"
 BACKEND_REPO="book-review-dev-backend"
 
-DB_HOST="book-review-dev-aurora.cluster-c36o0gga4dfz.ap-south-1.rds.amazonaws.com"
+DB_HOST="$AURORA_ENDPOINT"
 DB_NAME="bookreviewdb"
 DB_USER="admin"
-DB_PASS="NewStrongPassword123!"
+DB_PASS="$DB_PASS"
 
 ECR_URL="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com"
 
