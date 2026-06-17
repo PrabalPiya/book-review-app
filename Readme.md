@@ -1,6 +1,6 @@
 # Book Review App - DevOps Project
 
-This is a beginner-friendly DevOps project for deploying a three-tier Book Review web application on AWS.
+This is a beginner DevOps project for deploying a three-tier Book Review web application on AWS.
 
 The project uses:
 
